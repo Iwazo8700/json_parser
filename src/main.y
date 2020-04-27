@@ -8,25 +8,26 @@ void yyerror(char *c);
 int yylex(void);
 %}
 
-%token STR NUM EOL
+
+%token  '{' '}' ':' '[' ']' ',' STR NUM
 
 
 %%
 
 S:
-    '{' OBJ '}' S  EOL {printf("VALIDO\n");}
+    '{' OBJ '}' S {printf("VALIDO\n");}
     |
     ;
 OBJ:
     STR ':' TOKEN
-    | TOKEN ',' OBJ
+    |OBJ ',' OBJ
     ;
 TOKEN:
     NUM 
     |STR 
     | '[' VET ']'
     | '{' OBJ '}'
-    | '['']'
+    | '[' ']'
     ;
 VET:
     TOKEN
