@@ -65,7 +65,7 @@
 #line 3 "src/main.y" /* yacc.c:339  */
 
 #include <stdio.h>
-  #include <stdlib.h>
+#include <stdlib.h>
 #include <string.h>
 void yyerror(char *c);
 int yylex(void);
@@ -371,7 +371,7 @@ union yyalloc
 /* YYFINAL -- State number of the termination state.  */
 #define YYFINAL  5
 /* YYLAST -- Last index in YYTABLE.  */
-#define YYLAST   25
+#define YYLAST   20
 
 /* YYNTOKENS -- Number of terminals.  */
 #define YYNTOKENS  11
@@ -380,7 +380,7 @@ union yyalloc
 /* YYNRULES -- Number of rules.  */
 #define YYNRULES  12
 /* YYNSTATES -- Number of states.  */
-#define YYNSTATES  24
+#define YYNSTATES  23
 
 /* YYTRANSLATE[YYX] -- Symbol number corresponding to YYX as returned
    by yylex, with out-of-bounds checking.  */
@@ -451,10 +451,10 @@ static const yytype_uint16 yytoknum[] =
 };
 # endif
 
-#define YYPACT_NINF -4
+#define YYPACT_NINF -7
 
 #define yypact_value_is_default(Yystate) \
-  (!!((Yystate) == (-4)))
+  (!!((Yystate) == (-7)))
 
 #define YYTABLE_NINF -1
 
@@ -465,9 +465,9 @@ static const yytype_uint16 yytoknum[] =
      STATE-NUM.  */
 static const yytype_int8 yypact[] =
 {
-      -2,     9,    19,    15,     6,    -4,    -1,    -2,     9,     9,
-      -3,    -4,    -4,    -4,    -4,    13,     7,    -4,    -4,     5,
-      -4,    -4,    -1,    14
+       9,     4,    14,    10,     0,    -7,    -3,     9,     4,     4,
+      -3,    -7,    -7,    -7,    -7,     8,     1,    -7,    -6,    -7,
+      -7,    -3,    11
 };
 
   /* YYDEFACT[STATE-NUM] -- Default reduction number in state STATE-NUM.
@@ -476,20 +476,20 @@ static const yytype_int8 yypact[] =
 static const yytype_uint8 yydefact[] =
 {
        3,     0,     0,     0,     0,     1,     0,     3,     0,     0,
-       0,     7,     6,     4,     2,     5,     0,    10,    11,     0,
-       9,     8,     0,    12
+      10,     7,     6,     4,     2,     5,     0,    11,     0,     9,
+       8,     0,    12
 };
 
   /* YYPGOTO[NTERM-NUM].  */
 static const yytype_int8 yypgoto[] =
 {
-      -4,    16,     8,    18,     3
+      -7,    13,     2,    12,    -4
 };
 
   /* YYDEFGOTO[NTERM-NUM].  */
 static const yytype_int8 yydefgoto[] =
 {
-      -1,     2,     4,    18,    19
+      -1,     2,     4,    17,    18
 };
 
   /* YYTABLE[YYPACT[STATE-NUM]] -- What to do in state STATE-NUM.  If
@@ -497,16 +497,16 @@ static const yytype_int8 yydefgoto[] =
      number is the opposite.  If YYTABLE_NINF, syntax error.  */
 static const yytype_uint8 yytable[] =
 {
-       9,     1,     9,    10,    17,    10,    11,    12,    11,    12,
-       7,    20,    21,    22,     8,     8,    15,    16,     3,     5,
-       6,     8,    22,    14,    13,    23
+       9,    20,    21,    10,     7,    19,    11,    12,     8,     8,
+      15,    16,     1,     3,     5,     6,     8,    22,    13,    21,
+      14
 };
 
 static const yytype_uint8 yycheck[] =
 {
-       3,     3,     3,     6,     7,     6,     9,    10,     9,    10,
-       4,     4,     7,     8,     8,     8,     8,     9,     9,     0,
-       5,     8,     8,     7,     6,    22
+       3,     7,     8,     6,     4,     4,     9,    10,     8,     8,
+       8,     9,     3,     9,     0,     5,     8,    21,     6,     8,
+       7
 };
 
   /* YYSTOS[STATE-NUM] -- The (internal number of the) accessing
@@ -514,8 +514,8 @@ static const yytype_uint8 yycheck[] =
 static const yytype_uint8 yystos[] =
 {
        0,     3,    12,     9,    13,     0,     5,     4,     8,     3,
-       6,     9,    10,    14,    12,    13,    13,     7,    14,    15,
-       4,     7,     8,    15
+       6,     9,    10,    14,    12,    13,    13,    14,    15,     4,
+       7,     8,    15
 };
 
   /* YYR1[YYN] -- Symbol number of symbol that rule YYN derives.  */
@@ -529,7 +529,7 @@ static const yytype_uint8 yyr1[] =
 static const yytype_uint8 yyr2[] =
 {
        0,     2,     4,     0,     3,     3,     1,     1,     3,     3,
-       2,     1,     3
+       1,     1,     3
 };
 
 
@@ -1440,7 +1440,7 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 37 "src/main.y" /* yacc.c:1906  */
+#line 38 "src/main.y" /* yacc.c:1906  */
 
 
 void yyerror(char *s) {

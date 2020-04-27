@@ -14,7 +14,7 @@ STRING [\"\'][A-Za-z0-9\.\,\;\:\-\ ]*[\"\']
 
 %%
 
-
+[\[][\]] {return *yytext;}
 [\{] {return *yytext;}
 [\}] {return *yytext;}
 [\[] {return *yytext;}

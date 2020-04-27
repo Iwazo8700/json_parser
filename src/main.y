@@ -2,14 +2,14 @@
 
 %{
 #include <stdio.h>
-  #include <stdlib.h>
+#include <stdlib.h>
 #include <string.h>
 void yyerror(char *c);
 int yylex(void);
 %}
 
 
-%token  '{' '}' ':' '[' ']' ',' STR NUM
+%token  '{' '}' ':' '[' ']' ',' STR NUM 
 
 
 %%
@@ -27,11 +27,12 @@ TOKEN:
     |STR 
     | '[' VET ']'
     | '{' OBJ '}'
-    | '[' ']'
+    | '[]'
     ;
 VET:
     TOKEN
     |VET ',' VET
+    
     ;
 
 %%

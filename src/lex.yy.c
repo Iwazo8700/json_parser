@@ -376,8 +376,8 @@ static void yy_fatal_error (yyconst char msg[]  );
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
 
-#define YY_NUM_RULES 13
-#define YY_END_OF_BUFFER 14
+#define YY_NUM_RULES 14
+#define YY_END_OF_BUFFER 15
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -385,11 +385,11 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static yyconst flex_int16_t yy_accept[23] =
+static yyconst flex_int16_t yy_accept[24] =
     {   0,
-        0,    0,   14,   12,   11,   12,    5,    8,    6,    3,
-        4,   12,    1,    2,   11,    0,    9,    0,    8,   10,
-        7,    0
+        0,    0,   15,   13,   12,   13,    6,    9,    7,    4,
+        5,   13,    2,    3,   12,    0,   10,    0,    9,   11,
+        1,    8,    0
     } ;
 
 static yyconst YY_CHAR yy_ec[256] =
@@ -430,34 +430,34 @@ static yyconst YY_CHAR yy_meta[14] =
         2,    1,    1
     } ;
 
-static yyconst flex_uint16_t yy_base[24] =
+static yyconst flex_uint16_t yy_base[25] =
     {   0,
         0,    0,   26,   27,   23,   20,   27,    8,   13,   12,
        27,   11,   27,   27,   18,   15,   27,   11,    0,   27,
-       10,   27,   14
+       27,   10,   27,   14
     } ;
 
-static yyconst flex_int16_t yy_def[24] =
+static yyconst flex_int16_t yy_def[25] =
     {   0,
-       22,    1,   22,   22,   22,   23,   22,   22,   22,   22,
-       22,   22,   22,   22,   22,   23,   22,   22,    8,   22,
-       22,    0,   22
+       23,    1,   23,   23,   23,   24,   23,   23,   23,   23,
+       23,   23,   23,   23,   23,   24,   23,   23,    8,   23,
+       23,   23,    0,   23
     } ;
 
 static yyconst flex_uint16_t yy_nxt[41] =
     {   0,
         4,    5,    4,    6,    7,    4,    8,    9,   10,   11,
-       12,   13,   14,   18,   19,   16,   21,   21,   17,   15,
-       20,   20,   20,   17,   15,   22,    3,   22,   22,   22,
-       22,   22,   22,   22,   22,   22,   22,   22,   22,   22
+       12,   13,   14,   18,   19,   16,   22,   22,   17,   15,
+       20,   21,   20,   17,   15,   23,    3,   23,   23,   23,
+       23,   23,   23,   23,   23,   23,   23,   23,   23,   23
     } ;
 
 static yyconst flex_int16_t yy_chk[41] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    8,    8,   23,   21,   18,   16,   15,
-       12,   10,    9,    6,    5,    3,   22,   22,   22,   22,
-       22,   22,   22,   22,   22,   22,   22,   22,   22,   22
+        1,    1,    1,    8,    8,   24,   22,   18,   16,   15,
+       12,   10,    9,    6,    5,    3,   23,   23,   23,   23,
+       23,   23,   23,   23,   23,   23,   23,   23,   23,   23
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -702,8 +702,7 @@ YY_DECL
 #line 15 "src/main.l"
 
 
-
-#line 707 "src/lex.yy.c"
+#line 706 "src/lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -730,7 +729,7 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 23 )
+				if ( yy_current_state >= 24 )
 					yy_c = yy_meta[(unsigned int) yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
@@ -762,71 +761,76 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 18 "src/main.l"
+#line 17 "src/main.l"
 {return *yytext;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 19 "src/main.l"
+#line 18 "src/main.l"
 {return *yytext;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 20 "src/main.l"
+#line 19 "src/main.l"
 {return *yytext;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 21 "src/main.l"
+#line 20 "src/main.l"
 {return *yytext;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 22 "src/main.l"
+#line 21 "src/main.l"
 {return *yytext;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 23 "src/main.l"
+#line 22 "src/main.l"
 {return *yytext;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 24 "src/main.l"
-{return NUM;}
+#line 23 "src/main.l"
+{return *yytext;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 25 "src/main.l"
+#line 24 "src/main.l"
 {return NUM;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
+#line 25 "src/main.l"
+{return NUM;}
+	YY_BREAK
+case 10:
+YY_RULE_SETUP
 #line 26 "src/main.l"
 {return STR;}
 	YY_BREAK
-case 10:
+case 11:
 YY_RULE_SETUP
 #line 27 "src/main.l"
 ;
 	YY_BREAK
-case 11:
-/* rule 11 can match eol */
+case 12:
+/* rule 12 can match eol */
 YY_RULE_SETUP
 #line 28 "src/main.l"
 ;
 	YY_BREAK
-case 12:
+case 13:
 YY_RULE_SETUP
 #line 29 "src/main.l"
 ;
 	YY_BREAK
-case 13:
+case 14:
 YY_RULE_SETUP
 #line 31 "src/main.l"
 ECHO;
 	YY_BREAK
-#line 830 "src/lex.yy.c"
+#line 834 "src/lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1119,7 +1123,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 23 )
+			if ( yy_current_state >= 24 )
 				yy_c = yy_meta[(unsigned int) yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
@@ -1147,11 +1151,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 23 )
+		if ( yy_current_state >= 24 )
 			yy_c = yy_meta[(unsigned int) yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
-	yy_is_jam = (yy_current_state == 22);
+	yy_is_jam = (yy_current_state == 23);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
